@@ -1,0 +1,317 @@
+@font-face {
+    font-family: "regular";
+    src: url("static/fonts/reg.ttf")}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "regular";
+    height: 100%;
+    background-color: #fff;
+}
+*::-webkit-scrollbar {
+    width: 9px;
+}
+*::-webkit-scrollbar-track {
+    background: #e6e6e6;
+}
+*::-webkit-scrollbar-thumb {
+    background-color: #212121;
+    border-radius: 10px;
+    border: 1px solid #212121;
+}
+.nav {
+    background-color: white;
+}
+.navbar-brand {
+    font-size: 48px;
+}
+.nav-item .nav-link {
+    margin-left: 20px;
+    text-align: center;
+    display: inline-block;
+    transition: 0.5s color ease-in-out, 0.2s border-bottom linear;
+    border-bottom: 1px solid transparent;
+}
+.nav-item:hover .nav-link {
+    border-bottom: 1px black solid;
+}
+.nav.item {
+    font-size: 30px;
+    transition: 0.2s ease-in-out;
+}
+
+.card {
+    color:#383431 ;
+    background-color: #FFFFFF;
+   
+}
+.card-title {
+    font-size: 40px !important;
+    color: black;
+}
+h5 {
+    font-size: calc(14px + (18 - 14) * ((100vw - 360px) / (1600 - 360))) !important; 
+}
+.submit {
+    font-size: calc(13px + (16 - 13) * ((100vw - 360px) / (1600 - 320))) !important;
+    border-radius:0;
+    padding-left:  calc(20px + (28 - 20) * ((100vw - 360px) / (1600 - 360))) !important; 
+    padding-right: calc(20px + (28 - 20) * ((100vw - 360px) / (1600 - 360))) !important; 
+    padding-top:  calc(10px + (12 - 10) * ((100vw - 360px) / (1600 - 360))) !important; 
+    padding-bottom:   calc(10px + (12 - 10) * ((100vw - 360px) / (1600 - 360))) !important;
+    background-color: white;
+    border: 1px solid black;
+    transition: color 0.2s ease-out, background-color 0.2s linear;
+}
+.submit:hover {
+    background-color: black;
+    color: white;
+}
+li {
+    margin-top: 8px ;
+    margin-bottom: 8px ;
+    cursor: pointer;
+}
+input::placeholder {
+    vertical-align:middle;
+    text-align: center;
+    color:#42443E;
+    font-size: calc(12px + (14 - 12) * ((100vw - 360px) / (1600 - 360))) !important; 
+}
+input {
+    border-radius:2px;
+    background: #fff;
+    color: #42443E;
+    border-color: #42443E ;
+    padding: 100%;
+}
+input:focus {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline-width: 0;
+}
+.form-group {
+    width:100%;
+}
+img {
+    vertical-align: middle;
+    width: 100%;
+    width: calc(30px + 6 * ((100vw - 320px) / 680)) !important;  
+}
+
+.row-2 li:first-child {
+    font-size:  18px;
+    font-weight: bold;
+    margin-bottom: 20px;    
+    text-transform: uppercase;
+}
+footer {
+    overflow-x: hidden;
+    background-color: black;
+    color: white;
+}
+.social {
+    position: relative;
+    left: -10px;
+}
+.figure {
+    background-color: rgb(22, 19, 19);
+}
+.btn {
+    background-color: white;
+    color: #333;
+}
+a {
+    text-decoration: none;
+}
+.line {
+    background-color:rgb(165, 164, 164);
+    width: 92%;
+}
+.third-row {
+    background-color:white;
+    border-radius:50px;
+    padding: 0.8vh 2.7vh 0.8vh 2.7vh ;  
+}
+.third-row li {
+    justify-content: space-between ;
+    border-radius:50px;
+    font-size: calc(9px + (12 - 9) * ((100vw - 360px) / (1600 - 360))) !important; 
+}
+li.active-1 {
+    padding: 1.7vh;
+}
+.cap {
+    font-size: 15px;
+    letter-spacing: 3px;
+    font-family: "regular";
+    color: white;
+}
+.figure-caption {
+    color: white;
+    font-size: 15px;
+    letter-spacing: 3px;
+}
+b, strong {
+    font-weight: bolder;
+    color: white;
+}
+.row-2 li:first-child {
+    font-size: 15px !important;
+    letter-spacing: 3px;
+    font-family: "regular";
+    color: #7f9186;
+    text-transform: uppercase;
+}
+.row-2 li {
+    font-size: 20px;
+    transition: 0.2s ease-in-out;
+}
+.feedback {
+    width: 94%;
+    font-family: "regular";
+}
+.feedback h5 {
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.form-group {
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.carousel-caption .p a {
+    font-size: 7vw !important;
+    color: white;
+}
+.tagline {
+    font-size: clamp(30px, 8vw, 100px);
+    text-align: center;
+    margin: 50px;
+}
+.icon-container {
+    position: fixed;
+    top: 25px;
+    right: 25px;
+} 
+.dummy-icon {
+    cursor: pointer;
+    transition: opacity 0.1s linear, transform 0.1s ease-out;
+    margin: 8px;
+    width: 30px !important;
+}
+.dummy-icon:hover {
+    opacity: 0.5;
+    transform: scale(1.1);
+}
+.contact-info {
+    color: white;
+    font-size: 25px;
+}
+.discover-button {
+    margin: 25px auto;
+    display: block;
+    background-color: white;
+    border: 1px solid black;
+    font-size: 30px !important;
+    transition: color 0.2s ease-out, background-color 0.2s linear;
+}
+.discover-button:hover {
+    background-color: black;
+    color: white;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+
+.card-title {
+    color: black;
+    text-align: center;
+    font-size: 50px;
+    font-family: "regular";
+    margin-top: 20px;
+}
+.c-no {
+    height:150px;
+}
+.grey-bg {
+    background-color: white;
+}
+.counter-Txt {
+    text-align:center; 
+    font-size:30px; 
+    font-weight:bold; 
+    text-transform:uppercase; 
+    margin-top:20px;
+    color: black;
+    font-family: "regular";
+}
+.counter-Txt span {
+    display:block; 
+    font-size:40px;
+    color: black;
+    font-family: "regular";
+}
+@media(min-width:320px) and (max-width:767px) { 
+    .c-no {
+        height:100%;
+    }
+    .counter-Txt {
+        margin-top:35px; 
+    }
+    .margin-bot-35 {
+        margin-bottom:35px;
+    }
+}
+h2 {
+    text-align: center;
+    font-size: 3vh;
+    font-family: "regular";
+    letter-spacing: 0.2px;
+}
+footer ul li a {
+    color: white;
+}
+footer ul li a:hover {
+    color: rgb(233, 217, 217);
+}
+.product-description {
+    border-bottom: 1px solid #E1E8EE;
+    margin-bottom: 20px;
+}
+.product-description span {
+    font-size: 12px;
+    color: grey;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.product-description p {
+    font-size: 16px;
+    font-weight: 300;
+    color: black;
+    line-height: 24px;
+}
+.product-price {
+    display: flex;
+    align-items: center;
+}
+.product-price span {
+    font-size: 26px;
+    font-weight: 300;
+    color: #43474D;
+    margin-right: 20px;
+}
+@media (max-width: 940px) {
+    .prod {
+        flex-direction: column;
+        margin-top: 60px;
+    }
+}
+@media(max-width: 830px) {
+    .dummy-icon {
+        display: none;
+    }
+}

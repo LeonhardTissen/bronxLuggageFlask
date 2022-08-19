@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block style %}
+header{
+    background-image: url("/static/images/rimowamain.jpg");
+    background-size:cover ;
+    height: 70vh;
+}
+.card-footer a{
+    color: black;
+}
+{% endblock %}
+
+{% block content %}
+<main class="container prod">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card h-100">
+                <img src="/static/images/rimowa/{{product[1]}}.jpg"  class="card-img w-100 h-100" alt="...">
+            </div>
+        </div>
+  
+        <div class="col-md-6">
+            <div class="product-description">
+                <span>{{category}}</span><br><br>
+                <h1 class="tagline">{{product[0]}}</h1>
+                <p>For your essentials this backpack can carry all the stuff for you without caring for the space. it's a hardcase backpack for durability and it won't let the weak items from  crushing.</p>
+            </div>
+  
+            <h1 class="tagline">${{product[2]}}</h2>
+            <button class="discover-button">Add To Cart</button>
+        </div>
+    </div>
+</main>
+<br>
+<br>
+{% endblock %}

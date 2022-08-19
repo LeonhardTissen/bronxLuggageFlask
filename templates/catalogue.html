@@ -1,0 +1,158 @@
+{% extends 'base.html' %}
+
+{% block style %}
+.card-title {
+    font-size: 60px !important;
+    color: black;
+}
+.card-group{
+padding: 0px;
+}
+header{
+background-image: url("images/cataloguemain.jpg");
+background-size:cover;
+height: 70vh;
+}
+@media (max-width: 767px) {
+.carousel-inner .carousel-item > div {
+    display: none;
+}
+.carousel-inner .carousel-item > div:first-child {
+    display: block;
+}
+}
+.card-img {
+    height: 20vh;
+    width: auto;
+}
+.card-body {
+    background-size: cover;
+    background-position: center;
+}
+@media (max-width: 1175px) {
+    .card {
+        min-width: 400px;
+    }
+}
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+/* medium and up screens */
+@media (min-width: 768px) {
+    
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+    transform: translateX(25%);
+    }
+    
+    .carousel-inner .carousel-item-start.active, 
+    .carousel-inner .carousel-item-prev {
+    transform: translateX(-25%);
+    }
+}
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+transform: translateX(0);
+}
+a p {
+    color: black;
+}
+{% endblock %}
+
+{% block content %}
+<div class="card-group">
+    <a class="card text-center" href="mens.html">
+        <div class="card-body suitcase-background" style="background-image:url(static/images/mensmain.jpg)">
+            <h5 class="card-title" >MEN</h5>
+            <div class="container-fluid" style="height:250px; width: 200px;"></div>
+        </div>
+    </a>
+    <a class="card text-center" href="women.html">
+        <div class="card-body purse-background" style="background-image:url(static/images/womenmain.jpg)">
+            <h5 class="card-title" style="color: white;">WOMEN</h5>
+            <div class="container-fluid" style="height:250px;"></div>
+        </div>
+    </a>
+</div>
+
+<h1 class="tagline">Our featured luxury brands</h1>
+<div class="card-group">
+    <a class="card text-center" href="products/rimowa">
+        <div class="card-body suitcase-background" style="background-image:url(static/images/rimowamain.jpg)">
+            <h5 class="card-title">RIMOWA</h5>
+            <div class="container-fluid" style="height:250px; width: 200px;"></div>
+        </div>
+    </a>
+    <a class="card text-center" href="products/globetrot">
+        <div class="card-body purse-background" style="background-image:url(static/images/globetrottermain.jpg)">
+            <h5 class="card-title">GLOBE-TROTTER</h5>
+            <div class="container-fluid" style="height:250px;"></div>
+        </div>
+    </a>
+    <a class="card text-center" href="products/montblanc">
+        <div class="card-body purse-background" style="background-image:url(static/images/montblancmain.jpg)">
+            <h5 class="card-title">MONTBLANC</h5>
+            <div class="container-fluid" style="height:250px;"></div>
+        </div>
+    </a>
+    <a class="card text-center" href="products/mulberry">
+        <div class="card-body purse-background" style="background-image:url(static/images/mulberrymain.jpg)">
+            <h5 class="card-title">MULBERRY</h5>
+            <div class="container-fluid" style="height:250px;"></div>
+        </div>
+    </a>
+</div>
+
+<h1 class="tagline">Our featured amenity brands</h1>
+<div class="card-group">
+    <a class="card text-center" href="products/hartmann.html">
+        <div class="card-body suitcase-background" style="background-image:url(static/images/hartmannmain.jpg)">
+            <h5 class="card-title">HARTMANN</h5>
+            <div class="container-fluid" style="height:250px; width: 200px;"></div>
+        </div>
+    </a>
+    <a class="card text-center" href="products/openstory.html">
+        <div class="card-body purse-background" style="background-image:url(static/images/openstorymain.jpg)">
+            <h5 class="card-title">OPEN STORY</h5>
+            <div class="container-fluid" style="height:250px;"></div>
+        </div>
+    </a>
+    <a class="card text-center" href="products/thule.html">
+        <div class="card-body purse-background" style="background-image:url(static/images/thulemain.jpg)">
+            <h5 class="card-title">THULE</h5>
+            <div class="container-fluid" style="height:250px;"></div>
+        </div>
+    </a>
+</div>
+
+<h1 class="tagline">Search through luggage options</h1>
+<div class="card-group">
+    <a class="card text-center" href="products/suitcase.html">
+        <div class="card-body suitcase-background" style="background-image:url(static/images/suitcase.jpg)">
+            <h5 class="card-title" style="color: white;">SUITCASES</h5>
+            <div class="container-fluid" style="height:250px; width: 200px;"></div>
+        </div>
+    </a>
+    <a class="card text-center" href="products/purse.html">
+        <div class="card-body purse-background" style="background-image:url(static/images/purse.jpg)">
+            <h5 class="card-title">PURSES</h5>
+            <div class="container-fluid" style="height:250px;"></div>
+        </div>
+    </a>
+    <a class="card text-center" href="products/tote.html">
+        <div class="card-body purse-background" style="background-image:url(static/images/totemain.jpg)">
+            <h5 class="card-title">TOTE BAGS</h5>
+            <div class="container-fluid" style="height:250px;"></div>
+        </div>
+    </a>
+    <a class="card text-center" href="products/backpack.html">
+        <div class="card-body purse-background" style="background-image:url(static/images/backpack.jpg)">
+            <h5 class="card-title">BACKPACKS</h5>
+            <div class="container-fluid" style="height:250px;"></div>
+        </div>
+    </a>
+</div>
+<br><br>
+{% endblock %}
