@@ -59,11 +59,19 @@ transform: translateX(0);
 a p {
     color: black;
 }
+.navbar-container {
+    height: 500px;
+    background-image:url(/static/images/cataloguemain.jpg);
+    height:600px;
+    background-position-y:center;
+    background-size:cover;
+}
 {% endblock %}
 
 {% block title %}Catalogue - Bronx{% endblock %}
 
 {% block content %}
+<h1 class="tagline">Look through our collections</h1>
 <div class="card-group">
     <a class="card text-center" href="products/mens">
         <div class="card-body suitcase-background" style="background-image:url(static/images/mensmain.jpg)">
