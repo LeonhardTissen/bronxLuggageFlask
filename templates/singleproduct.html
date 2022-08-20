@@ -4,8 +4,10 @@
 <main class="container prod">
     <div class="row">
         <div class="col-md-6">
-            <div class="card h-100">
-                <img src="/static/images/{{category.lower()}}/{{product[1]}}.jpg"  class="card-img w-100 h-100" alt="Image of {{product[0]}}">
+            <div class="card h-100"> 
+                <img class="card-img w-100 h-100"
+                src="/static/images/{{category.lower()}}/{{product[1]}}.jpg" 
+                alt="Image of {{product[0]}}">
             </div>
         </div>
   
@@ -14,7 +16,7 @@
                 <span>{{category}}</span>
                 <br><br>
                 <h1 class="tagline">{{product[0]}}</h1>
-                <p>For your essentials this backpack can carry all the stuff for you without caring for the space. it's a hardcase backpack for durability and it won't let the weak items from  crushing.</p>
+                <p>{{product[3]}}</p>
             </div>
   
             <h1 class="tagline">${{product[2]}}</h2>

@@ -1,7 +1,6 @@
 # Importing all of the dependencies
 from flask import Flask, render_template
 import os
-import numpy as np
 from products import products
 
 # This is the port number, defaults to 5000 if no environment variable is found
