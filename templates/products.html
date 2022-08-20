@@ -1,12 +1,18 @@
 {% extends 'base.html' %}
 
+{% block title %}{{section}} - Bronx{% endblock %}
+
+{% block style %}
+.navbar-container {
+    height: 500px;
+    background-image:url(/static/images/{{section.lower()}}main.jpg);
+    height:600px;
+    background-position-y:center;
+    background-size:cover;
+}
+{% endblock %}
+
 {% block content %}
-<div class="container-fluid" style="
-background-image:url(/static/images/{{section.lower()}}main.jpg);
-height:400px;
-background-position-y:bottom;
-background-size:cover;">
-</div>
 <h1 class="tagline">{{section.upper()}}</h1>
 
 <div class="container p-3">
