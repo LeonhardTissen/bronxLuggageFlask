@@ -1,5 +1,5 @@
 # Importing all of the dependencies
-from flask import Flask, render_template
+from flask import Flask, render_template, url_for
 import os
 import numpy as np
 from products import products
@@ -38,7 +38,10 @@ def login():
 # The product listings
 @app.route('/products/<category>')
 def productlistings(category):
-    selected_category = products[category.lower()]
+    try:
+        selected_category = products[category.lower()]
+    except:
+        return render_template('404.html')
     return render_template('products.html', products = selected_category, section = category.capitalize())
 
 # A single product

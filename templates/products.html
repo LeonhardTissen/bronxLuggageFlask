@@ -1,16 +1,5 @@
 {% extends 'base.html' %}
 
-{% block style %}
-header{
-    background-image: url("/static/images/rimowamain.jpg");
-    background-size:cover ;
-    height: 70vh;
-}
-.card-footer a{
-    color: black;
-}
-{% endblock %}
-
 {% block content %}
 <div class="container-fluid" style="background-image:url(/static/images/{{section.lower()}}main.jpg);height:400px;background-position-y:bottom;background-size:cover;"></div>
 <h1 class="tagline">{{section}}</h1>
