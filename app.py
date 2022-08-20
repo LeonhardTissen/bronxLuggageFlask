@@ -1,5 +1,5 @@
 # Importing all of the dependencies
-from flask import Flask, render_template, url_for
+from flask import Flask, render_template
 import os
 import numpy as np
 from products import products
