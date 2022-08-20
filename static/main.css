@@ -191,7 +191,7 @@ b, strong {
     margin: 50px;
 }
 .icon-container {
-    position: fixed;
+    position: absolute;
     top: 25px;
     right: 25px;
 } 

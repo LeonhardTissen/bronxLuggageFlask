@@ -37,5 +37,25 @@ products = {
         ['Yellow Yolk', 'yellow', '1,500'],
         ['Green Grass', 'green', '600'],
         ['Boho', 'orange', '1,300']
+    ],
+    'hartmann': [
+        ['Journey', 'journey', '350'],
+        ['Weekend Duffel', 'brown_field', '200'],
+        ['Spinner', 'carry_on_spinner', '610']
+    ],
+    'openstory': [
+        ['Day trip', 'white', '125'],
+        ['Mini Backpack', 'mini', '49.99'],
+        ['The Zipper', 'blue', '830'],
+        ['Hugges', 'hugges', '3,600']
+    ],
+    'thule': [
+        ['Autumnal Orange', 'orange', '149.95'],
+        ['Bold Black', 'boldblack', '124.95'],
+        ['Cross over', 'crossover', '549.99'],
+        ['Red Lava', 'redlava', '89.99'],
+        ['Black carry', 'black', '699.95'],
+        ['Neel', 'neel', '170'],
+        ['Red Purse', 'arno', '349.99']
     ]
 }

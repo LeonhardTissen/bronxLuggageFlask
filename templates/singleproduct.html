@@ -2,7 +2,7 @@
 
 {% block style %}
 header{
-    background-image: url("/static/images/rimowamain.jpg");
+    background-image: url("/static/images/{{category.lower()}}main.jpg");
     background-size:cover ;
     height: 70vh;
 }
@@ -16,13 +16,14 @@ header{
     <div class="row">
         <div class="col-md-6">
             <div class="card h-100">
-                <img src="/static/images/rimowa/{{product[1]}}.jpg"  class="card-img w-100 h-100" alt="...">
+                <img src="/static/images/{{category.lower()}}/{{product[1]}}.jpg"  class="card-img w-100 h-100" alt="Image of {{product[0]}}">
             </div>
         </div>
   
         <div class="col-md-6">
             <div class="product-description">
-                <span>{{category}}</span><br><br>
+                <span>{{category}}</span>
+                <br><br>
                 <h1 class="tagline">{{product[0]}}</h1>
                 <p>For your essentials this backpack can carry all the stuff for you without caring for the space. it's a hardcase backpack for durability and it won't let the weak items from  crushing.</p>
             </div>
