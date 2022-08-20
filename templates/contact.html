@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+
+{% block style %}
+header{
+    background-image: url("images/contactmain.jpg");
+    background-size:cover ;
+    height: 70vh;
+}
+
+.contact{
+    background-image: url("images/bg4.webp");
+    background-size: cover;
+}
+* {
+    box-sizing: border-box;
+}
+/* Style inputs */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+/* Style the container/contact section */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+/* Create two columns that float next to eachother */
+.column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+{% endblock %}
+
+{% block content %}
+<br><br><br>
+<div class="container contact" style="background-color: white;">
+    <div class="row">
+        <div class="column">
+            <h2 style="font-size: 120px; text-align: left;">Talk to us! We're listening</h2>
+        </div>
+        <div class="column">
+            <form action="#">
+                <label for="fname">Your Name</label>
+                <input type="text" id="fname" name="firstname" required pattern="[A-Za-z]{5}" placeholder="Enter Your Name">
+                <label for="lname">Your E-Mail</label>
+                <input type="text" id="lname" name="lastname" required placeholder="Enter Your E-Mail Address">
+                <label for="luggages" required>Reason You Are Reaching Out</label>
+                <select id="luggages" name="luggages">
+                    <option value="Every Day Care">Choose one</option>
+                    <option value="Every Day Care">Suggestion</option>
+                    <option value="Hand Carry">Inquiry</option>
+                    <option value="Backpack">Complaint</option>
+                </select>
+                <label for="Message">Message</label>
+                <textarea id="Message" name="Message" placeholder="Write something.." required style="height:170px"></textarea>
+                <button class="discover-button">Submit</button>
+            </form>         
+        </div>
+    </div>
+</div>
+{% endblock %}

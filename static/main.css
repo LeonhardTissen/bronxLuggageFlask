@@ -1,6 +1,6 @@
 @font-face {
     font-family: "regular";
-    src: url("static/fonts/reg.ttf")}
+    src: url("/static/fonts/reg.ttf")}
 body {
     margin: 0;
     padding: 0;
