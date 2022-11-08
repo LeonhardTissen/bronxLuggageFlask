@@ -3,8 +3,8 @@ from flask import Flask, render_template
 import os
 from products import products
 
-# This is the port number, defaults to 5000 if no environment variable is found
-port = int(os.getenv('PORT', 5000))
+# This is the port number the app runs on
+port = 5065
 
 # Creating the app, it will be referenced in all of the routes and when starting the server
 app = Flask(__name__)
@@ -37,10 +37,10 @@ def login():
 # The product listings
 @app.route('/products/<category>')
 def productlistings(category):
-    try:
-        selected_category = products[category.lower()]
-    except:
+    if category.lower() not in products:
         return render_template('404.html')
+    
+    selected_category = products[category.lower()]
     return render_template('products.html', products = selected_category, section = category.capitalize())
 
 # A single product
