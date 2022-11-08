@@ -46,10 +46,18 @@ def productlistings(category):
 # A single product
 @app.route('/products/<category>/<product>')
 def singleproduct(category, product):
+    if category.lower() not in products:
+        return render_template('404.html')
+    
+    selected_product = None
+
     selected_category = products[category.lower()]
     for item in selected_category:
         if item[0] == product:
             selected_product = item
+    
+    if selected_product == None:
+        return render_template('404.html')
 
     return render_template('singleproduct.html', category = category, product = selected_product, section = category.capitalize())
 
